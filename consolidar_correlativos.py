@@ -2,15 +2,28 @@ import pandas as pd
 import glob
 import os
 import os.path
+import tkinter.filedialog, re
 
 pasos=7
+
+#AGREGARLE UN BUSCADOR DE CARPETA DONDE ESTARÁN LOS ARCHIVOS.
+root = tkinter.Tk()
+root.withdraw()
+file_path = tkinter.filedialog.askdirectory()
+
 
 print('')
 print('Paso 1 de '+str(pasos)+'- Borrando consolidado anterior')
 if os.path.isfile("consolidado_correlativos.csv"):
     os.remove("consolidado_correlativos.csv")
 
-archivostxt=glob.glob("*.txt")
+archivostxt=[]
+
+os.chdir(file_path)
+for file in glob.glob("*.txt"):
+    archivostxt.append(file)
+
+#archivostxt=glob.glob("*.txt")
 
 print('Paso 2 de '+str(pasos)+'- Leyendo archivos')
 
@@ -50,3 +63,6 @@ print ('Paso 6 de '+str(pasos)+'- Grabando Archivo')
 consolidado.to_csv('consolidado_correlativos.csv', encoding='latin1',index=False)
 
 print('Paso 7 de '+str(pasos)+'- Archivo listo')
+
+
+input()
