@@ -5,7 +5,7 @@ Los archivos deben guardarse con el código del servicio en el principio del nom
 
 "11 EstaT_CargoV_CttoA" para Arica
 
-Los archivos deben guardarse en la carpeta donde está el programa
+Al correr el programa se debe seleccionar la carpeta donde están ubicados los archivos.
 
 
 Se obtiene un archivo llamado "consolidado_correlativos.csv"
