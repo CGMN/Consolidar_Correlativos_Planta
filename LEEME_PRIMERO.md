@@ -1,5 +1,5 @@
 # Consolidar_Correlativos_Planta
-Consolida archivos de modulo planta SIRH, Definición_porvisión
+Consolida archivos de modulo planta SIRH, Definición_provisión
 
 Los archivos deben guardarse con el código del servicio en el principio del nombre de la siguiente manera:
 
