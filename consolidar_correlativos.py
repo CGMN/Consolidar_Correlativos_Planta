@@ -9,7 +9,6 @@ starttime =  time.time()
 
 pasos=7
 
-#AGREGARLE UN BUSCADOR DE CARPETA DONDE ESTARÁN LOS ARCHIVOS.
 root = tkinter.Tk()
 root.withdraw()
 file_path = tkinter.filedialog.askdirectory()
@@ -67,6 +66,6 @@ consolidado.to_csv('consolidado_correlativos.csv', encoding='latin1',index=False
 
 print('Paso 7 de '+str(pasos)+'- Archivo listo')
 
-print ("tiempo de ejecucion:", int(time.time()-starttime)," segundos")
+print ("Tiempo de ejecucion: "+ str(int(time.time()-starttime))+" segundos")
 
 input()
