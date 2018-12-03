@@ -7,6 +7,7 @@ Los archivos deben guardarse con el código del servicio en el principio del nom
 
 Al correr el programa se debe seleccionar la carpeta donde están ubicados los archivos.
 
+En el repositorio hay un archivo llamado "Programa_comprimido.rar", al descomprimirlo hay una carpeta y un acceso directo, ambos se dejan en el pc, el acceso directo permite ejecutar el programa.
 
-Se obtiene un archivo llamado "consolidado_correlativos.csv"
+Se obtiene un archivo llamado "consolidado_correlativos.csv" en la ubicación donde están los archivos a consolidar.
 
