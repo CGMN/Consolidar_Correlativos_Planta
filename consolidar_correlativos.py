@@ -3,6 +3,9 @@ import glob
 import os
 import os.path
 import tkinter.filedialog, re
+import time
+
+starttime =  time.time()
 
 pasos=7
 
@@ -64,5 +67,6 @@ consolidado.to_csv('consolidado_correlativos.csv', encoding='latin1',index=False
 
 print('Paso 7 de '+str(pasos)+'- Archivo listo')
 
+print ("tiempo de ejecucion:", int(time.time()-starttime)," segundos")
 
 input()
