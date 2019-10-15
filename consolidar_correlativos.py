@@ -8,7 +8,6 @@ import time
 starttime =  time.time()
 
 pasos=7
-
 root = tkinter.Tk()
 root.withdraw()
 file_path = tkinter.filedialog.askdirectory()
